@@ -8,7 +8,7 @@
     "keywords": [
     ],
     "version": "v1.0.0",
-    "active": 0,
+    "active": 1,
     "order": 10,
     "providers": [
         "Cms\\Modules\\Contact\\Providers\\ContactModuleServiceProvider",
