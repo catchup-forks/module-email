@@ -1,0 +1,23 @@
+{
+    "name": "Contact",
+    "alias": "contact",
+    "description": "Contact Module for Phoenix CMS",
+    "authors": [
+        { "name": "xLink (Dan)", "email": "xLink@cybershade.org" }
+    ],
+    "keywords": [
+    ],
+    "version": "v1.0.0",
+    "active": 0,
+    "order": 10,
+    "providers": [
+        "Cms\\Modules\\Contact\\Providers\\ContactModuleServiceProvider",
+        "Cms\\Modules\\Contact\\Providers\\ContactEventsProvider",
+        "Cms\\Modules\\Contact\\Providers\\ContactRoutingProvider"
+    ],
+    "aliases": {
+    },
+    "files": [
+        "helpers.php"
+    ]
+}
