@@ -41,7 +41,7 @@ class ContactModuleServiceProvider extends BaseModuleProvider
      * @var array
      */
     protected $bindings = [
-
+        'Cms\Modules\Contact\Repositories\Mail' => ['RepositoryInterface' => 'EloquentRepository'],
     ];
 
     /**
