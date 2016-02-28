@@ -1,5 +1,5 @@
 {
-    "name": "cysha/pxcms-contact",
+    "name": "cysha/module-contact",
     "type": "pxcms-module",
     "description": "Contact Module for PhoenixCMS",
     "license": "MIT",
