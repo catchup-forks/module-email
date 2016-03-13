@@ -1,4 +1,6 @@
-<?php namespace Cms\Modules\Contact\Http\Requests;
+<?php
+
+namespace Cms\Modules\Contact\Http\Requests;
 
 use Cms\Http\Requests\Request;
 

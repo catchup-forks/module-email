@@ -1,24 +1,24 @@
-<?php namespace Cms\Modules\Contact\Datatables;
+<?php
 
-use Lock;
+namespace Cms\Modules\Contact\Datatables;
 
 class MailManager
 {
     public function boot()
     {
         return [
-            /**
+            /*
              * Page Decoration Values
              */
             'page' => [
                 'title' => 'Contact Manager',
                 'alert' => [
                     'class' => 'info',
-                    'text'  => '<i class="fa fa-info-circle"></i> You can manage your contact mail from here.'
+                    'text' => '<i class="fa fa-info-circle"></i> You can manage your contact mail from here.',
                 ],
             ],
 
-            /**
+            /*
              * Set up some table options, these will be passed back to the view
              */
             'options' => [
@@ -30,11 +30,12 @@ class MailManager
                 'source' => 'backend.contact.manager',
                 'collection' => function () {
                     $model = 'Cms\Modules\Contact\Models\Mail';
+
                     return $model::all();
                 },
             ],
 
-            /**
+            /*
              * Lists the tables columns
              */
             'columns' => [
@@ -76,18 +77,17 @@ class MailManager
                         $return = [
                             [
                                 'btn-title' => 'Read',
-                                'btn-link'  => route('backend.contact.read', $model->id),
+                                'btn-link' => route('backend.contact.read', $model->id),
                                 'btn-class' => 'btn btn-default btn-xs btn-labeled',
-                                'btn-icon'  => 'fa fa-file',
+                                'btn-icon' => 'fa fa-file',
                                 'hasPermission' => 'read@contact_backend',
-                            ]
+                            ],
                         ];
 
                         return $return;
                     },
                 ],
-            ]
+            ],
         ];
-
     }
 }

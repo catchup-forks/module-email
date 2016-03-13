@@ -1,7 +1,7 @@
 <?php
 
 /**
- * TODO: add a link here to the docs for config/permissions.php
+ * TODO: add a link here to the docs for config/permissions.php.
  */
 return [
 
@@ -10,5 +10,5 @@ return [
         'read' => 'Read a contact mail',
         'update' => 'Update a contact mail',
         'delete' => 'Delete a contact mail',
-    ]
+    ],
 ];

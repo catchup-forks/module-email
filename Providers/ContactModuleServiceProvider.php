@@ -1,10 +1,11 @@
-<?php namespace Cms\Modules\Contact\Providers;
+<?php
+
+namespace Cms\Modules\Contact\Providers;
 
 use Cms\Modules\Core\Providers\BaseModuleProvider;
 
 class ContactModuleServiceProvider extends BaseModuleProvider
 {
-
     /**
      * Register the defined middleware.
      *
@@ -26,7 +27,7 @@ class ContactModuleServiceProvider extends BaseModuleProvider
     ];
 
     /**
-     * Register view composers
+     * Register view composers.
      *
      * @var array
      */
@@ -36,7 +37,7 @@ class ContactModuleServiceProvider extends BaseModuleProvider
     ];
 
     /**
-     * Register repository bindings to the IoC
+     * Register repository bindings to the IoC.
      *
      * @var array
      */
@@ -45,12 +46,10 @@ class ContactModuleServiceProvider extends BaseModuleProvider
     ];
 
     /**
-     * Register Auth related stuffs
+     * Register Auth related stuffs.
      */
     public function register()
     {
         parent::register();
-
     }
-
 }

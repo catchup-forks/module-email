@@ -1,9 +1,9 @@
-<?php namespace Cms\Modules\Contact\Repositories\Mail;
+<?php
+
+namespace Cms\Modules\Contact\Repositories\Mail;
 
 use Cms\Modules\Contact\Repositories\Mail\RepositoryInterface as MailRepository;
 use Cms\Modules\Core\Repositories\BaseEloquentRepository;
-use Illuminate\Database\Eloquent\Collection;
-use Carbon\Carbon;
 
 class EloquentRepository extends BaseEloquentRepository implements MailRepository
 {
@@ -11,6 +11,4 @@ class EloquentRepository extends BaseEloquentRepository implements MailRepositor
     {
         return 'Cms\Modules\Contact\Models\Mail';
     }
-
-
 }

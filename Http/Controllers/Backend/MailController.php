@@ -1,4 +1,6 @@
-<?php namespace Cms\Modules\Contact\Http\Controllers\Backend;
+<?php
+
+namespace Cms\Modules\Contact\Http\Controllers\Backend;
 
 use Cms\Modules\Admin\Traits\DataTableTrait;
 use Cms\Modules\Contact\Datatables\MailManager;
@@ -11,7 +13,6 @@ class MailController extends BaseController
     {
         $this->theme->breadcrumb()->add('Mail Manager', route('backend.contact.manager'));
 
-        return $this->renderDataTable(with(new MailManager)->boot());
+        return $this->renderDataTable(with(new MailManager())->boot());
     }
-
 }

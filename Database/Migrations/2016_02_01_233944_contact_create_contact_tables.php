@@ -5,7 +5,6 @@ use Illuminate\Database\Migrations\Migration;
 
 class ContactCreateContactTables extends Migration
 {
-
     public function __construct()
     {
         // Get the prefix
@@ -14,8 +13,6 @@ class ContactCreateContactTables extends Migration
 
     /**
      * Run the migrations.
-     *
-     * @return void
      */
     public function up()
     {
@@ -33,8 +30,6 @@ class ContactCreateContactTables extends Migration
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
     public function down()
     {

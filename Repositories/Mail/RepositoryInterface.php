@@ -1,9 +1,10 @@
-<?php namespace Cms\Modules\Contact\Repositories\Mail;
+<?php
+
+namespace Cms\Modules\Contact\Repositories\Mail;
 
 /**
- * Interface RoleRepository
+ * Interface RoleRepository.
  */
 interface RepositoryInterface
 {
-
 }

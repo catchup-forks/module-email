@@ -1,12 +1,12 @@
-<?php namespace Cms\Modules\Contact\Providers;
+<?php
+
+namespace Cms\Modules\Contact\Providers;
 
 use Cms\Modules\Core\Providers\CmsRoutingProvider;
 use Illuminate\Routing\Router;
-use Cms\Modules\Contact;
 
 class ContactRoutingProvider extends CmsRoutingProvider
 {
-
     protected $namespace = 'Cms\Modules\Contact\Http\Controllers';
 
     /**
@@ -14,7 +14,7 @@ class ContactRoutingProvider extends CmsRoutingProvider
      */
     protected function getFrontendRoute()
     {
-        return __DIR__ . '/../Http/routes-frontend.php';
+        return __DIR__.'/../Http/routes-frontend.php';
     }
 
     /**
@@ -22,7 +22,7 @@ class ContactRoutingProvider extends CmsRoutingProvider
      */
     protected function getBackendRoute()
     {
-        return __DIR__ . '/../Http/routes-backend.php';
+        return __DIR__.'/../Http/routes-backend.php';
     }
 
     /**
@@ -30,12 +30,11 @@ class ContactRoutingProvider extends CmsRoutingProvider
      */
     protected function getApiRoute()
     {
-        return __DIR__ . '/../Http/routes-api.php';
+        return __DIR__.'/../Http/routes-api.php';
     }
 
     public function boot(Router $router)
     {
         parent::boot($router);
-
     }
 }
