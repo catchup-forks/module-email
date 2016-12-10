@@ -11,7 +11,7 @@ class MailController extends BaseController
 
     public function manager()
     {
-        $this->theme->breadcrumb()->add('Mail Manager', route('backend.contact.manager'));
+        $this->theme->breadcrumb()->add('Mail Manager', route('admin.contact.manager'));
 
         return $this->renderDataTable(with(new MailManager())->boot());
     }

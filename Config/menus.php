@@ -3,7 +3,7 @@
 return [
     'backend_sidebar' => [
         [
-            'route' => 'backend.contact.manager',
+            'route' => 'admin.contact.manager',
             'text' => 'Contact Mail Manager',
             'icon' => 'fa-envelope',
             'order' => 6,

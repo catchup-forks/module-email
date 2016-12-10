@@ -4,6 +4,6 @@ use Illuminate\Routing\Router;
 
 $router->group(['prefix' => 'contact'], function (Router $router) {
 
-    $router->get('/', ['as' => 'backend.contact.manager', 'uses' => 'MailController@manager']);
+    $router->get('/', ['as' => 'admin.contact.manager', 'uses' => 'MailController@manager']);
 
 });

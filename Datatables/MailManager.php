@@ -27,7 +27,7 @@ class MailManager
                 'ordering' => false,
                 'sort_column' => 'id',
                 'sort_order' => 'desc',
-                'source' => 'backend.contact.manager',
+                'source' => 'admin.contact.manager',
                 'collection' => function () {
                     $model = 'Cms\Modules\Contact\Models\Mail';
 
@@ -77,7 +77,7 @@ class MailManager
                         $return = [
                             [
                                 'btn-title' => 'Read',
-                                'btn-link' => route('backend.contact.read', $model->id),
+                                'btn-link' => route('admin.contact.read', $model->id),
                                 'btn-class' => 'btn btn-default btn-xs btn-labeled',
                                 'btn-icon' => 'fa fa-file',
                                 'hasPermission' => 'read@contact_backend',
