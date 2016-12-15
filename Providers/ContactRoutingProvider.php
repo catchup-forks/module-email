@@ -3,7 +3,6 @@
 namespace Cms\Modules\Contact\Providers;
 
 use Cms\Modules\Core\Providers\CmsRoutingProvider;
-use Illuminate\Routing\Router;
 
 class ContactRoutingProvider extends CmsRoutingProvider
 {
@@ -33,8 +32,8 @@ class ContactRoutingProvider extends CmsRoutingProvider
         return __DIR__.'/../Http/routes-api.php';
     }
 
-    public function boot(Router $router)
+    public function boot()
     {
-        parent::boot($router);
+        parent::boot();
     }
 }

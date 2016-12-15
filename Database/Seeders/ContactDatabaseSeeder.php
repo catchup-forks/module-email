@@ -5,7 +5,7 @@ namespace Cms\Modules\Contact\Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class ContactTableSeeder extends Seeder
+class ContactDatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeds.
