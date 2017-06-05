@@ -1,7 +1,7 @@
 {
-    "name": "cysha/module-contact",
+    "name": "cleansoftnl/module-email",
     "type": "pxcms-module",
-    "description": "Contact Module for PhoenixCMS",
+    "description": "Email Module for PhoenixCMS",
     "license": "MIT",
     "authors": [
         { "name": "xLink", "email": "xLink@cybershade.org" }
